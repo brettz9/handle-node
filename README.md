@@ -52,7 +52,9 @@ handler object, and these will also be supplied to the callbacks:
 ```js
 var textContent = handleNode(node, arg1, arg2, {
     element: function (node, arg1, arg2) {
-        return handleNode(node, arg1, arg2);
+        return Array.from(node.childNodes).reduce(function (str, node) {
+            return str + handleNode(node, arg1, arg2);
+        }, '');
     },
     text: function (node, arg1, arg2) {
         return node.nodeValue;

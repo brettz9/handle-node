@@ -2,7 +2,7 @@
     "name": "handle-node",
     "title": "Handle DOM Node",
     "id": "handle-node@brett.zamir",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "index.js",
     "license": "MIT",
     "author": "Brett Zamir",

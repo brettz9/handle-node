@@ -2,9 +2,8 @@
 
 Simple callback delegator based on DOM Node type.
 
-Provides an alternative to switches and numeric constant-based delegation.
-Useful for human-readable node traversal which does not necessarily
-require going through the whole tree as with DOM `NodeIterator`s or `TreeWalker`s.
+Provides an alternative to switches, numeric constant-based delegation, and
+DOM `NodeIterator`s or `TreeWalker`s.
 
 ## Installation
 

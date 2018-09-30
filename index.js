@@ -1,5 +1,4 @@
 /*jslint vars:true, node:true*/
-var module;
 (function (undef) {'use strict';
 
 /**
@@ -43,7 +42,7 @@ function handleNode (node) {
 
 // EXPORTS
 
-if (module) {
+if (typeof module !== 'undefined') {
     module.exports = handleNode;
 }
 else {

@@ -1,16 +1,20 @@
 {
     "name": "handle-node",
-    "title": "Handle DOM Node",
     "id": "handle-node@brett.zamir",
     "version": "0.1.1",
     "main": "index.js",
     "license": "MIT",
     "author": "Brett Zamir",
     "contributors": [],
+    "homepage": "https://github.com/brettz9/handle-node",
     "repository": {
         "type": "git",
         "url": "https://github.com/brettz9/handle-node.git"
     },
+    "engines": {
+      "node": "*"
+    },
+    "dependencies": {},
     "bugs": "https://github.com/brettz9/handle-node/issues",
     "description": "Simple callback delegator based on DOM Node type",
     "keywords": [

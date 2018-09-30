@@ -33,15 +33,13 @@ invoking the callback which corresponds to the supplied node's type.
 Here is a demonstration reimplementing `textContent`:
 
 ```js
-var textContent = handleNode(node, {
-    element: function (node) {
-        return Array.from(node.childNodes).reduce(function (str, node) {
+const textContent = handleNode(node, {
+    element ({childNodes}) {
+        return [...childNodes].reduce((str, node) => {
             return str + handleNode(node);
         }, '');
     },
-    text: function (node) {
-        return node.nodeValue;
-    }
+    text: ({nodeValue}) => nodeValue
 });
 ```
 
@@ -49,15 +47,13 @@ Other arguments can also be passed in after `node` and before the
 handler object, and these will also be supplied to the callbacks:
 
 ```js
-var textContent = handleNode(node, arg1, arg2, {
-    element: function (node, arg1, arg2) {
-        return Array.from(node.childNodes).reduce(function (str, node) {
+const textContent = handleNode(node, arg1, arg2, {
+    element ({childNodes}, arg1, arg2) {
+        return [...childNodes].reduce((str, node) => {
             return str + handleNode(node, arg1, arg2);
         }, '');
     },
-    text: function (node, arg1, arg2) {
-        return node.nodeValue;
-    }
+    text: ({nodeValue}, arg1, arg2) => nodeValue
 });
 ```
 

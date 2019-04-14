@@ -13,37 +13,7 @@ module.exports = {
   },
   settings: {
     polyfills: [
-      "Array.isArray",
-      "Blob",
-      "console",
-      "Date.now",
-      "document.body",
-      "document.evaluate",
-      "document.head",
-      "document.importNode",
-      "document.querySelector", "document.querySelectorAll",
-      "DOMParser",
-      "Error",
-      "fetch",
-      "FileReader",
-      "history.pushState",
-      "history.replaceState",
-      "JSON",
-      "location.href",
-      "location.origin",
-      "MutationObserver",
-      "Object.assign", "Object.defineProperty", "Object.defineProperties",
-      "Object.getOwnPropertyDescriptor",
-      "Object.entries", "Object.keys", "Object.values",
-      "Promise",
-      "Set",
-      "Uint8Array",
-      "URL",
-      "window.getComputedStyle",
-      "window.postMessage",
-      "window.scrollX", "window.scrollY",
-      "XMLHttpRequest",
-      "XMLSerializer"
+      "Map"
     ],
     jsdoc: {
       additionalTagNames: {

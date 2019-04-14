@@ -1,6 +1,6 @@
 {
     "name": "handle-node",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "main": "dist/index-umd.js",
     "module": "dist/index-es.js",
     "license": "MIT",
@@ -8,7 +8,7 @@
     "contributors": [],
     "homepage": "https://github.com/brettz9/handle-node",
     "scripts": {
-        "eslint": "eslint --report-unused-disable-directives --ext js .",
+        "eslint": "eslint --report-unused-disable-directives --ext js,md .",
         "rollup": "rollup -c",
         "test": "npm run eslint && npm run rollup && echo 'No tests currently'"
     },
@@ -17,8 +17,11 @@
         "url": "https://github.com/brettz9/handle-node.git"
     },
     "engines": {
-        "node": "*"
+        "node": ">=0.12.0"
     },
+    "browserslist": [
+      "cover 100%"
+    ],
     "dependencies": {},
     "bugs": "https://github.com/brettz9/handle-node/issues",
     "description": "Simple callback delegator based on DOM Node type",
@@ -29,6 +32,7 @@
     ],
     "devDependencies": {
         "@babel/core": "^7.4.3",
+        "@babel/preset-env": "^7.4.3",
         "@mysticatea/eslint-plugin": "^9.0.1",
         "eslint": "^5.16.0",
         "eslint-config-ash-nazg": "^2.0.0",

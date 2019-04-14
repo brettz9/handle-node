@@ -14,7 +14,7 @@ npm install handle-node
 ```
 
 ```js
-var handleNode = require('handle-node');
+const handleNode = require('handle-node');
 ```
 
 Browser:
@@ -33,28 +33,30 @@ invoking the callback which corresponds to the supplied node's type.
 Here is a demonstration reimplementing `textContent`:
 
 ```js
-const textContent = handleNode(node, {
+const textSerializer = {
     element ({childNodes}) {
         return [...childNodes].reduce((str, node) => {
-            return str + handleNode(node);
+            return str + handleNode(node, textSerializer);
         }, '');
     },
     text: ({nodeValue}) => nodeValue
-});
+};
+const textContent = handleNode(node, textSerializer);
 ```
 
 Other arguments can also be passed in after `node` and before the
 handler object, and these will also be supplied to the callbacks:
 
 ```js
-const textContent = handleNode(node, arg1, arg2, {
+const textSerializer = {
     element ({childNodes}, arg1, arg2) {
         return [...childNodes].reduce((str, node) => {
-            return str + handleNode(node, arg1, arg2);
+            return str + handleNode(node, arg1, arg2, textSerializer);
         }, '');
     },
     text: ({nodeValue}, arg1, arg2) => nodeValue
-});
+};
+const textContent = handleNode(node, arg1, arg2, textSerializer);
 ```
 
 ## API

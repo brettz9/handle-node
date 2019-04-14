@@ -1,3 +1,7 @@
+# 0.2.1
+
+- Fix: `main` and `module` pointing to bad paths
+
 # 0.2.0
 
 - Breaking change: Minimum version 0.12.0 (for `Map`) :-)

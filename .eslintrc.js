@@ -6,7 +6,9 @@ module.exports = {
     sourceType: "module"
   },
   // Need to make explicit here for processing by jsdoc/check-examples
-  plugins: [],
+  plugins: [
+    'chai-expect'
+  ],
   env: {
     browser: false,
     node: true
@@ -14,23 +16,7 @@ module.exports = {
   settings: {
     polyfills: [
       "Map"
-    ],
-    jsdoc: {
-      additionalTagNames: {
-        // In case we need to extend
-        customTags: []
-      },
-      tagNamePreference: {
-        arg: "param",
-        return: "returns"
-      },
-      allowOverrideWithoutParam: true,
-      allowImplementsWithoutParam: true,
-      allowAugmentsExtendsWithoutParam: true,
-      // For `jsdoc/check-examples` in `ash-nazg`
-      matchingFileName: "dummy.md",
-      rejectExampleCodeRegex: "^`",
-    }
+    ]
   },
   overrides: [
     // Our Markdown rules (and used for JSDoc examples as well, by way of
@@ -53,6 +39,15 @@ module.exports = {
         "node/no-missing-require": ["error", {
           allowModules: ["handle-node"]
         }]
+      }
+    },
+    {
+      extends: ['plugin:chai-friendly/recommended'],
+      files: ["test/**"],
+      rules: {
+        "chai-expect/missing-assertion": 2,
+        "chai-expect/terminating-properties": 1,
+        'import/unambiguous': 0
       }
     }
   ],

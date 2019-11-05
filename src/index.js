@@ -17,7 +17,7 @@ const nodeTypeToMethodMap = new Map([
 * Returns the value from executing a callback on a supplied callback
 *   object according to the type of node supplied.
 * @param {Node} node An XML or HTML node
-* @param {Object} extraArgs Callback object whose properties–all optional
+* @param {PlainObject} extraArgs Callback object whose properties–all optional
 *   (`element`, `attribute`, `text`, `cdata`, `entityReference`, `entity`,
 *   `processingInstruction`, `comment`, `document`, `documentType`,
 *   `documentFragment`, `notation`) are callbacks which will be passed

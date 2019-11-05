@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/brettz9/handle-node/workflows/Coverage/badge.svg)](https://github.com/brettz9/handle-node/actions)
+
 # handle-node
 
 Simple callback delegator based on DOM Node type.

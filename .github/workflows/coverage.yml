@@ -13,3 +13,11 @@ jobs:
       run: |
         npm ci
         npm run test-cov
+
+  setstatus:
+    needs: build
+    - name: Custom Github Status
+      uses: geekodour/gh-actions-custom-status@v0.0.4
+      with:
+          args: >-
+            --state=success

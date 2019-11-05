@@ -9,7 +9,7 @@
 [![Total Alerts](https://img.shields.io/lgtm/alerts/g/brettz9/handle-node.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/brettz9/handle-node/alerts)
 [![Code Quality: Javascript](https://img.shields.io/lgtm/grade/javascript/g/brettz9/handle-node.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/brettz9/handle-node/context:javascript)
 
-[![License](https://img.shields.io/npm/l/handle-node.svg)](LICENSE-MIT)
+[![License](https://img.shields.io/npm/l/handle-node.svg)](LICENSE-MIT.txt)
 
 # handle-node
 

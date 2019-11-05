@@ -1,4 +1,15 @@
+[![npm](http://img.shields.io/npm/v/handle-node.svg)](https://www.npmjs.com/package/handle-node)
+[![Dependencies](https://img.shields.io/david/brettz9/handle-node.svg)](https://david-dm.org/brettz9/handle-node)
+[![devDependencies](https://img.shields.io/david/dev/brettz9/handle-node.svg)](https://david-dm.org/brettz9/handle-node?type=dev)
+
+[![Actions Status](https://github.com/brettz9/handle-node/workflows/Node%20CI/badge.svg)](https://github.com/brettz9/handle-node/actions)
 [![Actions Status](https://github.com/brettz9/handle-node/workflows/Coverage/badge.svg)](https://github.com/brettz9/handle-node/actions)
+
+[![Known Vulnerabilities](https://snyk.io/test/github/brettz9/handle-node/badge.svg)](https://snyk.io/test/github/brettz9/handle-node)
+[![Code Quality: Javascript](https://img.shields.io/lgtm/grade/javascript/g/brettz9/handle-node.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/brettz9/handle-node/context:javascript)
+[![Total Alerts](https://img.shields.io/lgtm/alerts/g/brettz9/handle-node.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/brettz9/handle-node/alerts)
+
+[![License](https://img.shields.io/npm/l/handle-node.svg)](LICENSE-MIT)
 
 # handle-node
 

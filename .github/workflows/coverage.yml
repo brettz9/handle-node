@@ -15,7 +15,9 @@ jobs:
         npm run test-cov
 
   setstatus:
+    runs-on: ubuntu-latest
     needs: build
+    steps:
     - name: Custom Github Status
       uses: geekodour/gh-actions-custom-status@v0.0.4
       with:

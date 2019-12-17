@@ -1,5 +1,9 @@
 # CHANGES for `handle-node`
 
+## ?
+
+- npm: Update devDeps
+
 ## 0.3.0
 
 - Linting (ESLint): Update per latest ash-nazg, including ignoring rollup

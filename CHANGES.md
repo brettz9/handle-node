@@ -2,6 +2,7 @@
 
 ## ?
 
+- npm: Update `rollup-plugin-babel` to `@rollup/plugin-babel`
 - npm: Update devDeps
 
 ## 0.3.0

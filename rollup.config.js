@@ -1,4 +1,4 @@
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
 import {terser} from 'rollup-plugin-terser';
 
 /**
@@ -17,7 +17,9 @@ function getRollupObject ({minifying, format = 'umd'} = {}) {
       name: 'svgEditor'
     },
     plugins: [
-      babel()
+      babel({
+        babelHelpers: 'bundled'
+      })
     ]
   };
   if (minifying) {

@@ -4,6 +4,7 @@
 
 - Linting: As per latest ash-nazg/ESLint 7
 - npm: Update `rollup-plugin-babel` to `@rollup/plugin-babel`
+- npm: Add missing peer dep.
 - npm: Update devDeps
 
 ## 0.3.0

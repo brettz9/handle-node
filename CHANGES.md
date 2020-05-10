@@ -2,6 +2,7 @@
 
 ## ?
 
+- Linting: As per latest ash-nazg/ESLint 7
 - npm: Update `rollup-plugin-babel` to `@rollup/plugin-babel`
 - npm: Update devDeps
 

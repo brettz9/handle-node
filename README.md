@@ -20,17 +20,17 @@ DOM `NodeIterator`s or `TreeWalker`s.
 
 ## Installation
 
-### With ESM bundler (e.g., Rollup)
+```shell
+npm install handle-node
+```
+
+### Native ESM
 
 ```js
 import handleNode from 'handle-node';
 ```
 
-### Node
-
-```
-npm install handle-node
-```
+### CommonJS
 
 ```js
 const handleNode = require('handle-node');

@@ -1,11 +1,10 @@
 # CHANGES for `handle-node`
 
-## ?
+## 0.4.0
 
-- Linting: As per latest ash-nazg/ESLint 7
-- npm: Update `rollup-plugin-babel` to `@rollup/plugin-babel`
-- npm: Add missing peer dep.
-- npm: Update devDeps
+- feat: switch to native ESM with exports
+- chore: update devDeps. and lint
+- chore: switch to pnpm
 
 ## 0.3.0
 

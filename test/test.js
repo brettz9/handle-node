@@ -1,5 +1,3 @@
-/* eslint-env mocha */
-
 import {JSDOM} from 'jsdom';
 import {expect} from 'chai';
 import handleNode from '../src/index.js';

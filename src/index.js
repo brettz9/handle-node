@@ -22,11 +22,12 @@ const nodeTypeToMethodMap = new Map([
 *   `processingInstruction`, `comment`, `document`, `documentType`,
 *   `documentFragment`, `notation`) are callbacks which will be passed
 *   the supplied arguments
+* @throws {TypeError}
 * @returns {any|void} The result of calling the relevant callback
 *   (or `undefined` if no handler present)
 */
 function handleNode (node, ...extraArgs) {
-  const cbObj = extraArgs[extraArgs.length - 1];
+  const cbObj = extraArgs.at(-1);
 
   if (!nodeTypeToMethodMap.has(node.nodeType)) {
     throw new TypeError('Not a valid `nodeType` value');

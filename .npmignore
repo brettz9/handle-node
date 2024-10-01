@@ -2,3 +2,4 @@ rollup.config.js
 test
 .nyc_output
 coverage
+eslint.config.js

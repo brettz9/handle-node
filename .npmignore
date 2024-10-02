@@ -3,3 +3,5 @@ test
 .nyc_output
 coverage
 eslint.config.js
+.github
+.editorconfig

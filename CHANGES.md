@@ -1,5 +1,9 @@
 # CHANGES for `handle-node`
 
+## 0.5.0 (unreleased)
+
+- chore: Require Node >= 20
+
 ## 0.4.0
 
 - feat: switch to native ESM with exports

@@ -1,8 +1,10 @@
 # CHANGES for `handle-node`
 
-## 0.5.0 (unreleased)
+## 0.5.0
 
-- chore: Require Node >= 20
+- fix: import path
+- chore: Require Node >= 20.11.0
+- chore: update devDeps.
 
 ## 0.4.0
 

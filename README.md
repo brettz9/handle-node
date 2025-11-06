@@ -74,12 +74,12 @@ const textContent = handleNode(node, { // This object is `textSerializer`
 });
 ```
 
-Other arguments can also be passed in after `node` and before the
+Other arguments can also be passed in after the
 handler object, and these will also be supplied to the callbacks:
 
 ```js
 const textContent = handleNode(
-  node, arg1, arg2,
+  node,
   { // This object is `textSerializer`
     element ({childNodes}, arg1, arg2, textSerializer) {
       return [...childNodes].reduce((str, node) => {
@@ -87,7 +87,7 @@ const textContent = handleNode(
       }, '');
     },
     text: ({nodeValue}, arg1, arg2) => nodeValue
-  }
+  }, arg1, arg2
 );
 ```
 

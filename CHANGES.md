@@ -1,8 +1,13 @@
 # CHANGES for `handle-node`
 
+## 0.6.1
+
+- docs: bug with argument order
+
 ## 0.6.0
 
 - feat: TypeScript
+- BREAKING: Changed argument order
 
 ## 0.5.0
 

@@ -42,6 +42,7 @@ export default [
     rules: {
       // Override these `ash-nazg/sauron` rules which are difficult for us
       //   to apply at this time
+      'jsdoc/reject-any-type': 'off'
     }
   }
 ];

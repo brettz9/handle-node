@@ -16,6 +16,7 @@ describe('handle-node', function () {
   });
   it('Throws with a non-node', function () {
     expect(() => {
+      // @ts-expect-error Deliberately bad argument
       handleNode({});
     }).to.throw(TypeError, 'Not a valid `nodeType` value');
   });

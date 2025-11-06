@@ -1,5 +1,9 @@
 # CHANGES for `handle-node`
 
+## 0.6.0
+
+- feat: TypeScript
+
 ## 0.5.0
 
 - fix: import path

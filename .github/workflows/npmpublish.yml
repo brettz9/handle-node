@@ -8,24 +8,40 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: 12
-      - run: npm ci
-      - run: npm test
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
 
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: 12
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm publish
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
@@ -33,13 +49,21 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: 12
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
           registry-url: https://npm.pkg.github.com/
           scope: '@brettz9'
-      - run: npm ci
-      - run: npm publish
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

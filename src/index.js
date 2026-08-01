@@ -13,7 +13,6 @@ const nodeTypeToMethodMap = new Map([
   [12, /** @type {const} */ ('notation')]
 ]);
 
-/* eslint-disable jsdoc/valid-types -- Bug */
 /**
  * @template T
  * @typedef {T extends Map<any, infer V> ? V : never} MapValue
@@ -77,14 +76,13 @@ const nodeTypeToMethodMap = new Map([
  *   (or `undefined` if no handler present)
  */
 function handleNode (node, cbObj, ...extraArgs) {
-  /* eslint-enable jsdoc/valid-types -- Bug */
   if (!nodeTypeToMethodMap.has(node.nodeType)) {
     throw new TypeError('Not a valid `nodeType` value');
   }
-  const methodName = /** @type {MapValue<nodeTypeToMethodMap>} */ (
+  const methodName = /** @type {MapValue<typeof nodeTypeToMethodMap>} */ (
     nodeTypeToMethodMap.get(node.nodeType)
   );
-  if (!cbObj[methodName]) {
+  if (!Object.hasOwn(cbObj, methodName)) {
     return undefined;
   }
   // @ts-expect-error Ok

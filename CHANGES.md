@@ -1,5 +1,11 @@
 # CHANGES for `handle-node`
 
+## ?
+
+- chore: issue with npm ci without lock file (AI)
+- chore: add `packages` for pnpm workspace file
+- chore: update devDeps. and lint
+
 ## 0.6.1
 
 - docs: bug with argument order

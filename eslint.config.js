@@ -19,9 +19,9 @@ export default [
       'no-undef': ['off'],
       'no-unused-vars': ['off'],
       'padded-blocks': ['off'],
-      'import/unambiguous': ['off'],
-      'import/no-commonjs': ['off'],
-      'import/no-unresolved': ['off'],
+      'import-x/unambiguous': ['off'],
+      'import-x/no-commonjs': ['off'],
+      'import-x/no-unresolved': ['off'],
       'n/no-missing-import': ['error', {
         allowModules: ['handle-node']
       }],
@@ -35,7 +35,7 @@ export default [
     rules: {
       'chai-expect/missing-assertion': 2,
       'chai-expect/terminating-properties': 1,
-      'import/unambiguous': 0
+      'import-x/unambiguous': 0
     }
   },
   {

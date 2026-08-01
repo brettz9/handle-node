@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["ESNext", "DOM"],
+    "types": ["mocha"],
     "skipLibCheck": true,
     "moduleResolution": "nodenext",
     "module": "NodeNext",
@@ -9,6 +10,6 @@
     "noEmit": true,
     "strict": true
   },
-  "include": ["*.js", "src/**/*.js", "test/*.js"],
+  "include": ["rollup.config.js", "src/**/*.js", "test/*.js"],
   "exclude": ["node_modules"]
 }
